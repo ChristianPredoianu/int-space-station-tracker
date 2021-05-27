@@ -7,9 +7,11 @@ import { Circle as CircleStyle, Stroke, Style } from 'ol/style';
 import { OSM, Vector as VectorSource } from 'ol/source';
 import { Tile as TileLayer, Vector as VectorLayer } from 'ol/layer';
 import { easeOut } from 'ol/easing';
+
 import { fromLonLat } from 'ol/proj';
 import { getVectorContext } from 'ol/render';
 import { unByKey } from 'ol/Observable';
+import { fetchSpaceStationData } from './spaceStationData';
 
 const tileLayer = new TileLayer({
   source: new OSM({
@@ -21,11 +23,16 @@ const map = new Map({
   layers: [tileLayer],
   target: 'map',
   view: new View({
-    center: [0, 0],
-    zoom: 2,
-    minZoom: 1,
+    zoom: 3,
+    minZoom: 2,
     multiWorld: true,
   }),
+});
+
+fetchSpaceStationData().then((stationData) => {
+  map
+    .getView()
+    .setCenter(fromLonLat([stationData.longitude, stationData.latitude]));
 });
 
 const source = new VectorSource({
@@ -36,7 +43,7 @@ const vector = new VectorLayer({
 });
 map.addLayer(vector);
 
-export function positionOfSpaceStation(x, y) {
+export function setPositionOfSpaceStation(x, y) {
   const geom = new Point(fromLonLat([x, y]));
   const feature = new Feature(geom);
   source.addFeature(feature);
