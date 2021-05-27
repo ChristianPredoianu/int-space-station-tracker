@@ -9,27 +9,46 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Play', sans-serif;
+}
+
+header {
+  padding: 5rem 0;
+  border-bottom: 1px solid black;
+}
+
+.header-logo {
+  font-size: clamp(1rem, 1vw, 2rem);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  padding: 0 2rem;
 }
 
 #map {
-  width: 100%;
+  width: 80vw;
   height: 400px;
-  padding: 2rem 0;
+  padding: 4rem 0 2rem 0;
+  cursor: grabbing;
+  margin: 0 auto;
 }
 
 .info {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #ffffff;
-  border-width: 2px 0 2px 0;
-  border-style: solid;
-  border-color: black;
+  justify-content: space-around;
+
   padding: 5rem 0;
 }
 
-.gauge-heading {
-  width: 30%;
+.data-refresh-time {
+  font-size: 3rem;
+  text-align: center;
+  padding: 5rem;
+}
+
+.card-heading {
+  color: black;
+  margin: 5rem;
 }
 
 .gauge-container {
@@ -38,14 +57,15 @@ html {
   align-items: center;
   width: 30%;
   margin-top: 1rem;
-  padding: 8rem 0;
-  background-color: rgb(243, 243, 243);
+  padding-bottom: 10rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10%;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.4);
 }
 
 .gauge {
   width: 100%;
   max-width: 250px;
-  font-family: 'Roboto', sans-serif;
   font-size: 32px;
   color: #004033;
 }
@@ -54,7 +74,7 @@ html {
   width: 100%;
   height: 0;
   padding-bottom: 50%;
-  background: #b4c0be;
+  background: #c9c8c8;
   position: relative;
   border-top-left-radius: 100% 200%;
   border-top-right-radius: 100% 200%;
@@ -67,7 +87,7 @@ html {
   left: 0;
   width: inherit;
   height: 100%;
-  background: #2afdf3;
+  background: #000000;
   transform-origin: center top;
   transform: rotate(0.25turn);
   transition: transform 0.2s ease-out;
@@ -91,4 +111,24 @@ html {
   justify-content: center;
   padding-bottom: 25%;
   box-sizing: border-box;
+}
+
+.altitude-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+
+  border-radius: 10%;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.altitude {
+  font-size: 3rem;
+  padding-bottom: 5rem;
+}
+
+.satellite-icon {
+  color: #000000;
+  font-size: 5rem;
 }
