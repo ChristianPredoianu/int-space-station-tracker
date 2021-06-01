@@ -55,7 +55,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project is made to mimic some of netflix functionality.
+Track current position and path about the international space station. Show info about velocity and altitude.
 
 ### Built With
 
