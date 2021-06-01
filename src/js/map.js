@@ -7,7 +7,6 @@ import { Circle as CircleStyle, Stroke, Style } from 'ol/style';
 import { OSM, Vector as VectorSource } from 'ol/source';
 import { Tile as TileLayer, Vector as VectorLayer } from 'ol/layer';
 import { easeOut } from 'ol/easing';
-
 import { fromLonLat } from 'ol/proj';
 import { getVectorContext } from 'ol/render';
 import { unByKey } from 'ol/Observable';
@@ -29,6 +28,7 @@ const map = new Map({
   }),
 });
 
+//Set the initial position of space station when map loads
 fetchSpaceStationData().then((stationData) => {
   map
     .getView()
