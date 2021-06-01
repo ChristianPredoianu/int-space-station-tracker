@@ -14,11 +14,11 @@ html {
 
 header {
   padding: 5rem 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
 }
 
 .header-logo {
-  font-size: clamp(1rem, 1vw, 2rem);
+  font-size: clamp(1rem, 2vw, 2.5vw);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
@@ -36,29 +36,28 @@ header {
 .info {
   display: flex;
   justify-content: space-around;
-
-  padding: 5rem 0;
+  padding: 5rem 0 20rem 0;
 }
 
 .data-refresh-time {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 2.5vw, 3.5rem);
   text-align: center;
   padding: 5rem;
 }
 
 .card-heading {
-  color: black;
+  color: #000000;
   margin: 5rem;
 }
 
-.gauge-container {
+.card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 30%;
   margin-top: 1rem;
   padding-bottom: 10rem;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   border-radius: 10%;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.4);
 }
@@ -95,7 +94,6 @@ header {
 
 .gauge__cover {
   font-size: 2.5rem;
-
   width: 75%;
   height: 150%;
   background-color: rgb(255, 255, 255);
@@ -113,16 +111,6 @@ header {
   box-sizing: border-box;
 }
 
-.altitude-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
-
-  border-radius: 10%;
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.4);
-}
-
 .altitude {
   font-size: 3rem;
   padding-bottom: 5rem;
@@ -131,4 +119,41 @@ header {
 .satellite-icon {
   color: #000000;
   font-size: 5rem;
+}
+
+/* MEDIA QUERY MANAGER
+/*
+0-285px       Fold
+0-600px:      Phone
+600-900px:    Tablet: Portrait
+900-1200px:   Tablet Landscape
+[1200-1800px] Is where the normal styles apply
+1800px + :    Big Desktop
+*/
+
+@media (max-width: 56.25em) {
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    width: 50%;
+  }
+
+  .card-container:not(:first-of-type) {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .card-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 17.8125em) {
+  .card-container {
+    width: 95%;
+  }
 }
