@@ -8,17 +8,17 @@
     <img src="src/assets/images/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Netflix Clone Vue</h3>
+  <h3 align="center">Int Space Station Tracker (Open Street Map)</h3>
 
   <p align="center">
-   A Netflix clone to mimic Netflix functionality. Made with Vue.js 
+   International space station tracker to keep track off the current position of the space station nad show info about current velocity and altitude. Made with Vanilla js. 
     <br />
-    <a href="https://github.com/ChristianPredoianu/netflix-clone-vue"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ChristianPredoianu/int-space-station-tracker"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://netclonevue.netlify.app/">View Demo</a>
+    <a href="https://int-space-station-tracker.netlify.app//">View Demo</a>
     ·
-    <a href="https://github.com/ChristianPredoianu/netflix-clone-vue/issues/issues">Report Bug</a>
+    <a href="https://github.com/ChristianPredoianu/int-space-station-tracker/issues">Report Bug</a>
     ·
    
   </p>
@@ -59,11 +59,10 @@ This project is made to mimic some of netflix functionality.
 
 ### Built With
 
-* [Vue.js](https://vuejs.org/)
-* [Firebase](https://firebase.google.com/)
-* [Sass](https://sass-lang.com/)
-* [Css](https://www.w3.org/Style/CSS/Overview.en.html)
-* [HTML](https://developer.mozilla.org/sv-SE/docs/Web/HTML)
+* [Html5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+* [Css3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Parcel](https://parceljs.org/)
 
 
 
@@ -83,7 +82,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/ChristianPredoianu/netflix-clone-vue.git
+   git clone https://github.com/ChristianPredoianu/int-space-station-tracker.git
    ```
 2. Install NPM packages
    ```sh
@@ -92,24 +91,20 @@ To get a local copy up and running follow these simple steps.
    
 3. Run dev server
    ```sh
-   npm run serve
+   npm run dev
    ```
-
+4. Build for production
+   ```sh
+   npm run build
+   ```
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To start using Netclone you have two options:
-
-1.1 Sign in to Netclone with an existing account for demo purposes https://netclonevue.netlify.app/signIn:<br/>
-    <b>Username</b>: test@test.com  
-    <b>Password:</b> testingnetclone
-    => choose an existing profile
-   
-1.2 Signup to Netclone with a <b>dummy email</b> made up by you. E.g (john@whatever.com) It doesn't need to be a valid email. And choose a <b>password.</b> 
-    => Add a profile and continue with the selected profile.
+Keep track of the current position of the international space station on map, see previos position on map, see info about current velocity and altitude.
+Data refreshes every 2 sec due to rate limit from API.
 
 
 
@@ -124,16 +119,15 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Christian Predoianu - [@linkedin](https://se.linkedin.com/in/christian-predoianu-369218157) - christianpredoianu@yahoo.com
 
-Project Link: [https://github.com/ChristianPredoianu/netflix-clone-vue](https://github.com/ChristianPredoianu/netflix-clone-vue)
+Project Link: [https://github.com/ChristianPredoianu/int-space-station-tracker](https://github.com/ChristianPredoianu/int-space-station-tracker)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [Vue Awesome Swiper](https://github.com/surmon-china/vue-awesome-swiper)
-* [Vue Simple Accordion](https://github.com/tkhquang/vue-simple-accordion)
-* [Vuex Persisted State](https://github.com/robinvdvleuten/vuex-persistedstate)
+* [Where the ISS at API](https://wheretheiss.at/w/developer)
+* [Open Street Map](https://www.openstreetmap.org/)
 * [Font-Awesome](https://fontawesome.com/)
 
 
