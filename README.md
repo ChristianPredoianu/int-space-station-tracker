@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ChristianPredoianu/int-space-station-tracker">
-    <img src="src/assets/images/favicon.ico" alt="Logo" width="80" height="80">
+    <img src="src/assets/images/favicon.ico" alt="Logo" width="200" height="180">
   </a>
 
   <h3 align="center">Int Space Station Tracker (Open Street Map)</h3>
