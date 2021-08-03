@@ -16,7 +16,7 @@
     <a href="https://github.com/ChristianPredoianu/int-space-station-tracker"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://int-space-station-tracker.netlify.app//">View Demo</a>
+    <a href="https://int-space-station-tracker.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/ChristianPredoianu/int-space-station-tracker/issues">Report Bug</a>
     ·
