@@ -11,7 +11,7 @@
   <h3 align="center">Int Space Station Tracker (Open Street Map)</h3>
 
   <p align="center">
-   International space station tracker to keep track off the current position of the space station nad show info about current velocity and altitude. Made with Vanilla js. 
+   International space station tracker to keep track off the current position of the space station and show info about current velocity and altitude. Made with Vanilla js. 
     <br />
     <a href="https://github.com/ChristianPredoianu/int-space-station-tracker"><strong>Explore the docs »</strong></a>
     <br />
