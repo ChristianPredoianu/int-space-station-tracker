@@ -1,4 +1,4 @@
- 
+# Int Space Station Tracker 
  
 
 <!-- PROJECT LOGO -->
@@ -11,16 +11,11 @@
   <h3 align="center">Int Space Station Tracker (Open Street Map)</h3>
 
   <p align="center">
-   International space station tracker to keep track off the current position of the space station and show info about current velocity and altitude. Made with Vanilla js. 
-    <br />
     <a href="https://github.com/ChristianPredoianu/int-space-station-tracker"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://int-space-station-tracker.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/ChristianPredoianu/int-space-station-tracker/issues">Report Bug</a>
-    ·
-   
   </p>
 </p>
 
@@ -55,7 +50,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Track current position and path about the international space station. Show info about velocity and altitude.
+ International space station tracker to keep track off the current position of the space station and show info about current velocity and altitude. Made with Vanilla js 
 
 ### Built With
 
@@ -63,7 +58,8 @@ Track current position and path about the international space station. Show info
 * [Css3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Parcel](https://parceljs.org/)
-
+* [Open Street Map](https://www.openstreetmap.org/)
+* [Where the ISS at API](https://wheretheiss.at/w/developer)
 
 
 <!-- GETTING STARTED -->
@@ -107,7 +103,6 @@ Keep track of the current position of the international space station on map, se
 Data refreshes every 2 sec due to rate limit from API.
 
 
-
 <!-- LICENSE -->
 ## License
 
@@ -126,26 +121,5 @@ Project Link: [https://github.com/ChristianPredoianu/int-space-station-tracker](
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [Where the ISS at API](https://wheretheiss.at/w/developer)
-* [Open Street Map](https://www.openstreetmap.org/)
 * [Font-Awesome](https://fontawesome.com/)
 
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username 
- 
