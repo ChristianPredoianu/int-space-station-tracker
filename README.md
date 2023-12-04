@@ -58,7 +58,7 @@
 * [Css3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Parcel](https://parceljs.org/)
-* [Open Street Map](https://www.openstreetmap.org/)
+* [Open layers](https://openlayers.org)
 * [Where the ISS at API](https://wheretheiss.at/w/developer)
 
 
