@@ -13,9 +13,7 @@ import { unByKey } from 'ol/Observable';
 import { fetchSpaceStationData } from './spaceStationData';
 
 const tileLayer = new TileLayer({
-  source: new OSM({
-    wrapX: false,
-  }),
+  source: new OSM(),
 });
 
 const map = new Map({
@@ -30,13 +28,11 @@ const map = new Map({
 
 //Set the initial position of space station when map loads
 fetchSpaceStationData().then((stationData) => {
-  map
-    .getView()
-    .setCenter(fromLonLat([stationData.longitude, stationData.latitude]));
+  map.getView().setCenter(fromLonLat([stationData.longitude, stationData.latitude]));
 });
 
 const source = new VectorSource({
-  wrapX: false,
+  /* wrapX: false, */
 });
 const vector = new VectorLayer({
   source: source,
